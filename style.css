@@ -1,8 +1,55 @@
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0 100px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #0057b32a;
+}
+
+h3.nome_dev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px 5px!important;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 5px 5px;
+}
+
+nav > div.link_menu {
+  display: flex;
+  flex-direction: row;
+}
+
+nav > div.link_menu > a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > div.link_menu > a.active {
+  color: #3c82fb;
+  text-decoration: underline;
+}
+
+nav > div.link_menu > a:hover {
+  color: #3c82fb;
+  text-decoration: underline;
+}
+
+nav > div.link_menu > a > h4 {
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 20%;
+    margin: auto 20%;
   }
   
   .card {
@@ -55,4 +102,97 @@
     cursor: pointer;
   }
   
+  /* ----------------    ABOUT  ------------------------- */
+
+  .container_mother {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+  }
+
+  .container_to {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+  }
+
+  .container_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .box {
+    margin-top: 10px;
+  }
+
+  .container_image {
+    display: flex;
+  }
+
+  .profile_photo {
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .tech_stack {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -10%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+  
+  h5 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .tech_stack > svg {
+    margin: 0 15px;
+  }
+
+  svg {
+    height: 30px;
+  }
+
+  .html5 {
+    fill: #ef7e15;
+  }
+
+  .css3 {
+    fill: #3c82fb;
+  }
+
+  .js {
+    fill: #ffdd00;
+  }
+
+  .react {
+    fill: #7ae9ff;
+  }
+
+  .angular {
+    fill: #cd1804;
+  }
+
+  .linkedin {
+    fill: #1e3050;
+  }
+
+  .git {
+    fill: #1e3050
+  }
   
